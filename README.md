@@ -1,0 +1,2 @@
+# djangostart
+Finally start Django
