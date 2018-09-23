@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for post in post_all %}
+        <div>
+            <p>published : {{ post.published_date }}</p>
+            <h1>
+                <a href="{% url 'post_detail' post.id %}">
+                    {{ post.title }}
+                </a>
+            </h1>
+            <p>{{ post.text | linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
+
