@@ -3,6 +3,9 @@
 
 {% block content %}
 <h1> post Detail </h1>
+<a href="{% url 'post_edit' id=post.id %}">
+    <span class="glyphicon glyphicon-pencil"></span>
+</a>
 post title : {{ post.title }}
 text : {{ post.text }}
 {% endblock %}}
